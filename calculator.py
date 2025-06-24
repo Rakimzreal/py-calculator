@@ -1,19 +1,24 @@
 
+while True:
+    try:
+        num1 = input('Number: ')
+        num1 = float(num1)
+        break
+    except:
+        print('Invalid number ')
 
 
-try:
-    num1 = input('Number: ')
-    num1 = float(num1)
-except:
-    print('Invalid ')
 
 sign = input('Sign: ')
 
-try:
-    num2 = input('Number: ')
-    num2 = float(num2)
-except:
-    print('Invalid ')
+while True:
+    try:
+        num2 = input('Number: ')
+        num2 = float(num2)
+        break
+    except:
+        print('Invalid ')
+
 
 
 
@@ -22,7 +27,10 @@ if sign == '+':
 elif sign == '-':
     result = num1 - num2 
 elif sign == '/':
-    result = num1 / num2 
+    if num2 != 0:
+        result = num1 / num2 
+    else:
+        print('Error: Division by zero ')
 elif sign == '*':
     result = num1 * num2 
 elif sign == '**':
