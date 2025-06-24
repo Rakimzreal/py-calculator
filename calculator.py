@@ -1,24 +1,21 @@
 
-while True:
-    try:
-        num1 = input('Number: ')
-        num1 = float(num1)
-        break
-    except:
-        print('Invalid number ')
 
+def get_number(number):
+    while True:
+        try:
+            num1 = input('Number: ')
+            num1 = float(num1)
+            return num1
+        except:
+            print('Invalid number ')
+
+
+num1 = get_number(1)
 
 
 sign = input('Sign: ')
 
-while True:
-    try:
-        num2 = input('Number: ')
-        num2 = float(num2)
-        break
-    except:
-        print('Invalid ')
-
+num2 = get_number(2)
 
 
 
