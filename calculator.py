@@ -18,7 +18,7 @@ sign = input('Sign: ')
 num2 = get_number(2)
 
 
-
+result = None
 if sign == '+':
     result = num1 + num2
 elif sign == '-':
@@ -34,7 +34,8 @@ elif sign == '**':
     result = num1 ** num2 
 elif sign == '%':
     result = num1 % num2 
- 
+ else:
+    print('Invalid operator! ')
 
 
 print(result)
