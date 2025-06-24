@@ -3,7 +3,7 @@
 def get_number(number):
     while True:
         try:
-            num1 = input('Number: ')
+            num1 = input(f'Number{number}: ')
             num1 = float(num1)
             return num1
         except:
