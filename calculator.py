@@ -1,9 +1,20 @@
-num1 = input('Number: ')
-sign = input('Sign: ')
-num2 = input('Number: ')
 
-num1 = float(num1)
-num2 = float(num2)
+
+
+try:
+    num1 = input('Number: ')
+    num1 = float(num1)
+except:
+    print('Invalid ')
+
+sign = input('Sign: ')
+
+try:
+    num2 = input('Number: ')
+    num2 = float(num2)
+except:
+    print('Invalid ')
+
 
 
 if sign == '+':
